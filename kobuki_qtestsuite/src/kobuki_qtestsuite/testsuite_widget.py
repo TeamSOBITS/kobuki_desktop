@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/yujinrobot/kobuki_desktop/master/kobuki_qtestsuite/LICENSE
@@ -72,7 +72,7 @@ class TestSuiteWidget(QWidget):
     def on_cmd_vel_topic_combo_box_currentIndexChanged(self, topic_name):
         # This is probably a bit broken, need to test with more than just /cmd_vel so
         # there is more than one option.
-        print("Dude")
+        print ("Dude")
         self.cmd_vel_publisher = rospy.Publisher(str(self.cmd_vel_topic_combo_box.currentText()), Twist, queue_size=10)
 
     @Slot(str)

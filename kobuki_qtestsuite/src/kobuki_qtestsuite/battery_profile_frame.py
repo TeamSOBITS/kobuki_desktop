@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # License: BSD
 #   https://raw.github.com/yujinrobot/kobuki_desktop/master/kobuki_qtestsuite/LICENSE
@@ -155,7 +155,7 @@ class BatteryProfileFrame(QFrame):
           To be connected to the configuration dock combo box (via the main testsuite frame)
         '''
         self._cmd_vel_topic_name = topic_name
-        print("DudetteBattery %s" % topic_name)
+        print ("DudetteBattery %s" % topic_name)
 
     ##########################################################################
     # Ros Callbacks

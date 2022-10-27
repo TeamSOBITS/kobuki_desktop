@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0.2)
 project(kobuki_gazebo_plugins)
 
 find_package(gazebo REQUIRED)
@@ -26,7 +26,7 @@ catkin_package(INCLUDE_DIRS include
                               std_msgs
                               tf)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 link_directories(${GAZEBO_LIBRARY_DIRS})
 include_directories(include
