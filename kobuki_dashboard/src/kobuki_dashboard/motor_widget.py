@@ -27,13 +27,13 @@ class MotorWidget(IconToolButton):
     def update_state(self, state):
         if state is not super(MotorWidget, self).state:
             super(MotorWidget, self).update_state(state)
-            if state is 0:
+            if state == 0:
                 self.setToolTip("Motors: Off")
             else:
                 self.setToolTip("Motors: On")
 
     def toggle(self):
-        if super(MotorWidget, self).state is 1:
+        if super(MotorWidget, self).state == 1:
             self._pub.publish(MotorPower(0))
         else:
             self._pub.publish(MotorPower(1))
